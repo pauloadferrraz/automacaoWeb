@@ -14,7 +14,8 @@ public class Usuario implements Serializable {
 	private static final long serialVersionUID = -7390392097656238443L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@SequenceGenerator (name = "seq_cod", sequenceName = "usuario_codigo_seq")
+	@GeneratedValue(strategy = GenerationType.AUTO , generator="seq_cod")
 	private Integer codigo;
 	
 	private String nome;

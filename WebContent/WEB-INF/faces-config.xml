@@ -27,6 +27,11 @@
 			<from-outcome>usuarioSucesso</from-outcome>
 			<to-view-id>/publico/usuarioSucesso.xhtml</to-view-id>
 		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>principal</from-outcome>
+			<to-view-id>/admin/principal.xhtml</to-view-id>
+		</navigation-case>
 
 	</navigation-rule>
 

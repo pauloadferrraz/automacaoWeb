@@ -25,7 +25,7 @@
 		<filter-name>conexaoFiter</filter-name>
 		<url-pattern>*.jsf</url-pattern>
 	</filter-mapping>
-  
+  <!-- Requisicao BD -->
   
   
 </web-app>
