@@ -31,7 +31,6 @@ public class UsuarioBean {
 	
 	
 	public String editar(){
-		this.destinoSalvar = "principal";
 		this.confirmarSenha = this.usuario.getSenha();
 		return"/publico/usuario";
 	}
@@ -44,10 +43,13 @@ public class UsuarioBean {
 			return null;
 		}
 		
+		String teste = this.destinoSalvar;
+		System.out.println("destino: "+teste);
 		//Salva Usuario
 		UsuarioRN usuarioRN = new UsuarioRN();
 		usuarioRN.salvar(usuario);
 		return this.destinoSalvar;
+		
 	}
 
 	public String excluir(){
