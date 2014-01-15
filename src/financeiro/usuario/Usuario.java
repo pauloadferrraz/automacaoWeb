@@ -33,10 +33,20 @@ public class Usuario implements Serializable {
 	
 	@ElementCollection(targetClass = String.class)
 	@JoinTable(
+	           name = "usuario_permissao", 
+			     uniqueConstraints = {@UniqueConstraint(columnNames = {"usuario", "permissao"})}, 
+			     joinColumns = @JoinColumn(name = "usuario"))
+	@Column(name = "permissao", length = 50)
+	private Set<String>	     permissao	        = new HashSet<String>();
+	
+	
+/*	@ElementCollection(targetClass = String.class)
+	@JoinTable(
 	           name = "usuario_permissao",
-			   joinColumns = @JoinColumn(name = "codigo_usuario"))
-			   @Column(name = "permissao")
-			   private Set<String>	     permissao	        = new HashSet<String>();
+	           uniqueConstraints = {@UniqueConstraint(columnNames = {"codigo_usuario", "permissao"})}, 
+	           	joinColumns = @JoinColumn(name = "codigo_usuario"))
+			   @Column(name = "permissao", length = 50)
+			   private Set<String>	     permissao	        = new HashSet<String>();*/
 	
 	
 	public Integer getCodigo() {
