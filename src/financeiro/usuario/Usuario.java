@@ -1,7 +1,7 @@
 package financeiro.usuario;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.util.*;
 
 import javax.persistence.*;
 
@@ -19,16 +19,24 @@ public class Usuario implements Serializable {
 	private Integer codigo;
 	
 	private String nome;
-	private String email;
-	
-	//@org.hibernate.annotations.NaturalId
+	@org.hibernate.annotations.NaturalId
 	private String login;
 	
+	private String email;
 	private String senha;
 	private Date nascimento;
 	private String celular;
 	private String idioma;
 	private boolean ativo;
+	
+	
+	
+	@ElementCollection(targetClass = String.class)
+	@JoinTable(
+	           name = "usuario_permissao",
+			   joinColumns = @JoinColumn(name = "codigo_usuario"))
+			   @Column(name = "permissao")
+			   private Set<String>	     permissao	        = new HashSet<String>();
 	
 	
 	public Integer getCodigo() {
@@ -84,6 +92,14 @@ public class Usuario implements Serializable {
 	}
 	public void setAtivo(boolean ativo) {
 		this.ativo = ativo;
+	}
+	
+	public Set<String> getPermissao() {
+		return permissao;
+	}
+
+	public void setPermissao(Set<String> permissao) {
+		this.permissao = permissao;
 	}
 	
 	

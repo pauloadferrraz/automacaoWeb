@@ -1,6 +1,7 @@
 package financeiro.web;
 
 import java.util.List;
+import java.util.Set;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
@@ -33,6 +34,20 @@ public class UsuarioBean {
 	public String editar(){
 		this.confirmarSenha = this.usuario.getSenha();
 		return"/publico/usuario";
+	}
+	
+	public String atribuiPermissao(Usuario usuario, String permissao) {
+
+		this.usuario = usuario;
+
+		Set<String> permissoes = this.usuario.getPermissao();
+
+		if (permissoes.contains(permissao)) {
+			permissoes.remove(permissao);
+		} else {
+			permissoes.add(permissao);
+		}
+		return null;
 	}
 	
 	public String salvar(){
