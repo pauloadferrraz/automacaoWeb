@@ -6,18 +6,27 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core">
 
-<h:head>
-	<title>Cadastro de Usuários</title>
-</h:head>
-<h:body>
+<ui:composition template="/templates/interna.xhtml">
 
-	<h1><h:outputText value="#{usuarioBean.usuario.nome}"/>, Seja Bem-vindo ao sistema</h1>
+	<ui:define name="titulo">
+		Bem Vindo
+	</ui:define>
+
+	<ui:define name="corpo">
+
+		<h1>
+			<h:outputText value="#{usuarioBean.usuario.nome}" />
+			, Seja Bem-vindo ao sistema
+		</h1>
 	
 	Seu cadastro foi efetuado com sucesso.
-	<br/>
+	<br />
 	
 	Clique para efetuar o <a href="login.jsf">Login</a>
 
-</h:body>
+	</ui:define>
+
+
+</ui:composition>
 
 </html>

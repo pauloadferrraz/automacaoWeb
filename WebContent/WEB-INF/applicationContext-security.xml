@@ -8,6 +8,7 @@
 
 		<intercept-url pattern="/admin/**" access="ROLE_ADMINISTRADOR" />
 		<intercept-url pattern="/restrito/**" access="ROLE_USUARIO" />
+		
 		<form-login login-page="/publico/login.jsf"
 			always-use-default-target="true" default-target-url="/restrito/principal.jsf"
 			authentication-failure-url="/publico/login.jsf?login_error=1" />
@@ -27,19 +28,7 @@
 				users-by-username-query="SELECT login, senha, ativo 
 									   FROM usuario 
 									  WHERE login = ?" />
-           <!-- 
-			
-			
-			users-by-username-query="SELECT login, senha, ativo 
-										   FROM usuario 
-										  WHERE login = ?" 
-															
-			authorities-by-username-query="SELECT u.login, p.permissao 
-												 FROM usuario u, usuario_permissao p 
-												WHERE u.codigo = p.codigo_usuario 
-												  AND u.login = ?"
-	
-		/> -->
+          
 		</authentication-provider>
 	</authentication-manager>
 	
