@@ -7,24 +7,38 @@
 	xmlns:f="http://java.sun.com/jsf/core">
 
 <ui:composition template="/templates/principal.xhtml">
-
+	
+	
+	<ui:define name="titulo">
+		Login
+	</ui:define>
+	
 	<ui:define name="corpo">
-
 			
 			
 			
-			<h:panelGroup rendered="#{!empty param.login_error}">
-				<span style="font-color:red"> Erro ao efetuar o login.</span><br />
-				<br/>
-				Motivo: #{SPRING_SECURITY_LAST_EXCEPTION.message}
-			</h:panelGroup>
-		
+			
+			
 			<center>
+			
+				 
+			
 				<form id="login" method="post" action="${request.contextPath}/j_spring_security_check">
 				<table>
 					<tr><td>&nbsp;</td></tr>
 					<tr><td>&nbsp;</td></tr>
 					<tr><td>&nbsp;</td></tr>
+					
+					<tr><td>&nbsp;</td></tr>
+					<tr>
+						<h:panelGroup rendered="#{!empty param.login_error}">
+							<span style="font-color: red"> Erro ao efetuar o login.</span>
+							<br />
+							<br />
+							Motivo: #{SPRING_SECURITY_LAST_EXCEPTION.message}
+						</h:panelGroup>
+
+					</tr>
 					<tr><td>&nbsp;</td></tr>
 					
 					<tr><td>Login</td>
@@ -39,14 +53,26 @@
 					<tr><td>&nbsp;</td></tr>
 					
 					<tr>
+					
 						<td><input type="submit" value="Entrar"/></td>
-						<td><h:commandButton action="#{usuarioBean.novo}" value="Registre-se"/></td>
+						
 					</tr>
+										
 				</table>
+				
+				<br />
+					
 				<script>
 					document.getElementById("login").j_username.value = "#{SPRING_SECURITY_LAST_USERNAME}";
 				</script>
 				</form>
+				
+				<h:form>
+  
+					    <h:commandLink action="#{usuarioBean.novo}" value="Registre-se"></h:commandLink>
+  
+ 				</h:form>
+				
 			</center>
 				
 	</ui:define>

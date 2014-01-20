@@ -10,9 +10,15 @@ public class HibernateUtil {
 
 	private static SessionFactory buildSessionFactory() {
 		try {
+			
 			AnnotationConfiguration cfg = new AnnotationConfiguration();
+			
+			// carrega as configurações de conexão do arquivo
 			cfg.configure("hibernate.cfg.xml");
+			
+			//cria o SessionFactory
 			return cfg.buildSessionFactory();
+			
 		} catch (Throwable e) {
 			System.out.println("Criação inicial do objeto SessionFactory falhou. Erro: " + e);
 			throw new ExceptionInInitializerError(e);
