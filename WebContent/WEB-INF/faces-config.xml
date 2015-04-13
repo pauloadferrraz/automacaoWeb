@@ -21,9 +21,7 @@
 
 
 	<navigation-rule>
-
 		<from-view-id>/usuario.xhtml</from-view-id>
-		
 		<navigation-case>
 			<from-outcome>usuarioSucesso</from-outcome>
 			<to-view-id>/publico/usuarioSucesso.xhtml</to-view-id>
@@ -33,9 +31,7 @@
 
 
 	<application>
-		<el-resolver>
-    		    org.springframework.web.jsf.el.SpringBeanFacesELResolver
-		</el-resolver>
-  	</application>
+		<el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver>
+	</application>
 
 </faces-config>

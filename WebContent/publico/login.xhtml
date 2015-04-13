@@ -16,9 +16,6 @@
 	<ui:define name="corpo">
 			
 			
-			
-			
-			
 			<center>
 			
 				 
@@ -33,7 +30,6 @@
 					<tr>
 						<h:panelGroup rendered="#{!empty param.login_error}">
 							<span style="font-color: red"> Erro ao efetuar o login.</span>
-							<br />
 							<br />
 							Motivo: #{SPRING_SECURITY_LAST_EXCEPTION.message}
 						</h:panelGroup>

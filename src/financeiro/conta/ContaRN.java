@@ -3,7 +3,7 @@ package financeiro.conta;
 import java.util.Date;
 import java.util.List;
 
-import financeiro.usuario.Usuario;
+import br.enfase.usuario.Usuario;
 import financeiro.util.DAOFactory;
 
 public class ContaRN {

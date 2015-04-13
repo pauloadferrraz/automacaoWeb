@@ -8,10 +8,10 @@ import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.faces.event.ValueChangeEvent;
 
+import br.enfase.usuario.Usuario;
+import br.enfase.usuario.UsuarioRN;
 import financeiro.conta.Conta;
 import financeiro.conta.ContaRN;
-import financeiro.usuario.Usuario;
-import financeiro.usuario.UsuarioRN;
 
 @ManagedBean(name = "contextoBean")
 @SessionScoped

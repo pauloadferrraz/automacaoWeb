@@ -13,8 +13,8 @@
 			<table width="100%">
 			<tr>
 				<td>
-					<h:commandButton value="Contas" action="/restrito/conta"/>
-					<h:commandButton value="Categorias" action="/restrito/categoria" />
+					<h:commandButton value="Cadastros" action="/restrito/conta"/>
+					<h:commandButton value="Financeiro" action="/restrito/categoria" />
 					<h:selectOneMenu value="#{contextoBean.contaAtiva.conta}"
 						valueChangeListener="#{contextoBean.setContaAtiva}" 
 						rendered="#{!empty contextoBean}"
@@ -25,7 +25,7 @@
 										itemLabel="#{conta.descricao}"/>
 					</h:selectOneMenu>						
 					<h:commandButton value="Lançamentos" action="/restrito/lancamento"/>
-					<h:commandButton value="Cheque" action="/restrito/cheque" />
+					<h:commandButton value="Compras" action="/restrito/cheque" />
 					<h:commandButton value="Ações" action="/restrito/acao" />
 				</td>
 				<td align="left">

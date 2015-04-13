@@ -1,4 +1,4 @@
-package financeiro.usuario;
+package br.enfase.usuario;
 
 import java.util.List;
 

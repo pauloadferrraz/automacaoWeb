@@ -5,7 +5,7 @@ import java.util.List;
 import org.hibernate.*;
 import org.hibernate.criterion.Restrictions;
 
-import financeiro.usuario.Usuario;
+import br.enfase.usuario.Usuario;
 
 public class ContaDAOHibernate implements ContaDAO {
 

@@ -8,10 +8,10 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 
+import br.enfase.usuario.Usuario;
+import br.enfase.usuario.UsuarioRN;
 import financeiro.conta.Conta;
 import financeiro.conta.ContaRN;
-import financeiro.usuario.Usuario;
-import financeiro.usuario.UsuarioRN;
 
 
 @ManagedBean(name="usuarioBean")

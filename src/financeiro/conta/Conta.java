@@ -8,7 +8,7 @@ import javax.persistence.*;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
-import financeiro.usuario.Usuario;
+import br.enfase.usuario.Usuario;
 
 
 

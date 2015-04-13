@@ -2,7 +2,7 @@ package financeiro.conta;
 
 import java.util.List;
 
-import financeiro.usuario.Usuario;
+import br.enfase.usuario.Usuario;
 
 public interface ContaDAO {
 	

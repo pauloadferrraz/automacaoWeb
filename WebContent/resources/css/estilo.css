@@ -40,7 +40,7 @@ img {
 }
 
 #rodape {
-	background: url(#{resource['imagens:fundo_barra_rodape.png']}) repeat-x;
+	background: url(#{resource['imagens:fundo_barra_menu.png']}) repeat-x;
 	height: 100px;
 	margin-top: 5px;
 	padding: 10px;
