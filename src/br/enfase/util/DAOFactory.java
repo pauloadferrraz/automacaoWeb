@@ -1,8 +1,8 @@
-package financeiro.util;
+package br.enfase.util;
 
+import br.enfase.conta.ContaDAO;
+import br.enfase.conta.ContaDAOHibernate;
 import br.enfase.usuario.*;
-import financeiro.conta.ContaDAO;
-import financeiro.conta.ContaDAOHibernate;
 
 public class DAOFactory {
 

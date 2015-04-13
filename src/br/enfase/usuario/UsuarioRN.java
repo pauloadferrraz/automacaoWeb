@@ -3,7 +3,8 @@ package br.enfase.usuario;
 import java.util.List;
 
 
-import financeiro.util.*;
+
+import br.enfase.util.*;
 
 public class UsuarioRN {
 

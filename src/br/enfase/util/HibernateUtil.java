@@ -1,4 +1,4 @@
-package financeiro.util;
+package br.enfase.util;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;

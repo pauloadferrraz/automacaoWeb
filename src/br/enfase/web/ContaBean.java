@@ -1,13 +1,13 @@
-package financeiro.web;
+package br.enfase.web;
 
 import java.util.List;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
-import financeiro.conta.Conta;
-import financeiro.conta.ContaRN;
-import financeiro.web.util.ContextoUtil;
+import br.enfase.conta.Conta;
+import br.enfase.conta.ContaRN;
+import br.enfase.web.util.ContextoUtil;
 
 @ManagedBean(name="contaBean")
 @RequestScoped

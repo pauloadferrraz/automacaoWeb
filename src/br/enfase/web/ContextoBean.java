@@ -1,4 +1,4 @@
-package financeiro.web;
+package br.enfase.web;
 
 import java.util.List;
 
@@ -8,10 +8,10 @@ import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.faces.event.ValueChangeEvent;
 
+import br.enfase.conta.Conta;
+import br.enfase.conta.ContaRN;
 import br.enfase.usuario.Usuario;
 import br.enfase.usuario.UsuarioRN;
-import financeiro.conta.Conta;
-import financeiro.conta.ContaRN;
 
 @ManagedBean(name = "contextoBean")
 @SessionScoped

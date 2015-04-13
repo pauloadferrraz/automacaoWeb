@@ -1,4 +1,4 @@
-package financeiro.conta;
+package br.enfase.conta;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package financeiro.web.filter;
+package br.enfase.web.filter;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -9,7 +9,7 @@ import javax.servlet.ServletResponse;
 
 import org.hibernate.SessionFactory;
 
-import financeiro.util.HibernateUtil;
+import br.enfase.util.HibernateUtil;
 
 public class ConexaoHibernateFilter implements Filter {
 

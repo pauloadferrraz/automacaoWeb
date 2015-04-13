@@ -1,10 +1,10 @@
-package financeiro.conta;
+package br.enfase.conta;
 
 import java.util.Date;
 import java.util.List;
 
 import br.enfase.usuario.Usuario;
-import financeiro.util.DAOFactory;
+import br.enfase.util.DAOFactory;
 
 public class ContaRN {
 
