@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  <display-name>GabrielaFerraz</display-name>
+  <display-name>Enfase</display-name>
   
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -21,7 +21,7 @@
   <!-- Requisicao BD -->
   	<filter>
 		<filter-name>conexaoFiter</filter-name>
-		<filter-class>financeiro.web.filter.ConexaoHibernateFilter</filter-class>
+		<filter-class>br.enfase.web.filter.ConexaoHibernateFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>conexaoFiter</filter-name>
@@ -32,8 +32,8 @@
   
   <!-- Referencia ao Data source para conexao -->
 	<resource-ref>
-		<description>DataSource Financeiro</description>
-		<res-ref-name>jdbc/financeiro</res-ref-name>
+		<description>DataSource Enfase</description>
+		<res-ref-name>jdbc/enfase</res-ref-name>
 		<res-type>javax.sql.DataSource</res-type>
 		<res-auth>Container</res-auth>
 	</resource-ref>

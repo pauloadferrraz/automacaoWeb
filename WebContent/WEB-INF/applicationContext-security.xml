@@ -19,7 +19,7 @@
 
 	<authentication-manager>
 		<authentication-provider>
-			<jdbc-user-service data-source-ref="financeiroDataSource"
+			<jdbc-user-service data-source-ref="EnfaseDataSource"
 			
 			authorities-by-username-query="SELECT u.login, p.permissao 
 											 FROM usuario u, usuario_permissao p 

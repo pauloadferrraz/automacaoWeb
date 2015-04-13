@@ -3,9 +3,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id="financeiroDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+	<bean id="EnfaseDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
 		<property name="jndiName">
-			<value>java:comp/env/jdbc/financeiro</value>
+			<value>java:comp/env/jdbc/enfase</value>
 		</property>
 	</bean> 	
 </beans>
